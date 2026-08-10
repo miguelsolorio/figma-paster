@@ -2,7 +2,7 @@
 
 # Paster
 
-A Figma and FigJam plugin that pastes a list of text into your selected layers — one line per layer — and copies text back out of a selection.
+Paste text into your text layers, one line at a time. A Figma and FigJam plugin that fills a selection from a list, and copies text back out of one.
 
 Drop in a column from a spreadsheet, a list of names, or a set of copy variants, select the text layers you want filled, and hit Paste.
 
@@ -57,9 +57,24 @@ The UI is bundled into a single self-contained `dist/ui.html`, which is what Fig
 3. Upload `assets/icon-128.png` as the plugin icon and `assets/cover-art.png` as the cover image.
 4. Use the description and tags below, then submit for review.
 
-**Description**
+**Description** — ready to paste into the Community listing:
 
-> Paste a list of text into your selected layers — one line each. Drop in a column from a spreadsheet or a list of copy variants, select your text layers, and fill them all at once. Loop a short list across many layers, ignore empty lines, trim whitespace, reverse or shuffle the order, fill in canvas reading order, or split on commas and custom separators. Copy from selection pulls text back out the same way. Your settings are remembered between sessions.
+```text
+Paste text into your text layers, one line at a time.
+
+Features
+• Fill a selection of text layers from a list — one line per layer
+• Loop through the list when there are more layers than lines
+• Ignore empty lines
+• Trim whitespace from each line
+• Reverse or shuffle the order
+• Sort by canvas position instead of layer order
+• Split on new lines, commas, or a custom separator
+• Copy from selection — pull text back out of selected layers
+• Options are saved between sessions
+
+Works in Figma and FigJam.
+```
 
 **Tags:** text, content, copy, paste, localization, data, productivity
 
