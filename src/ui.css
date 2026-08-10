@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Figma toggles dark mode by adding .figma-dark to <html> (themeColors: true) */
+@custom-variant dark (&:where(.figma-dark, .figma-dark *));
+
+@theme {
+  --font-sans: "Inter", "Roboto", system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body,
+  #react-page {
+    height: 100%;
+  }
+
+  /* Render native form controls in the matching scheme */
+  html {
+    color-scheme: light;
+  }
+
+  html:where(.figma-dark) {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-white font-sans text-[13px] text-neutral-800 dark:bg-neutral-900 dark:text-neutral-200;
+  }
+}

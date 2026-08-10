@@ -1,0 +1,13 @@
+{
+  "name": "Paster",
+  "id": "1668696147027080221",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma", "figjam"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["none"],
+    "reasoning": "Paster runs entirely offline. All UI code and styles are bundled into the plugin, and nothing leaves the document."
+  }
+}
